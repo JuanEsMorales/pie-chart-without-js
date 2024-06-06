@@ -1,0 +1,36 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pie_chart {
+  width: 500px;
+  height: 500px;
+  position: relative;
+  background: conic-gradient(
+    darkolivegreen 0% 0%,
+    darkred 0% 100%
+  );
+  border-radius: 100%;
+  overflow: hidden;
+}
+
+#check:checked ~ .pie_chart {
+  background: conic-gradient(
+    darkolivegreen 0% 50%,
+    darkred 0% 100%
+  );
+}
+
+#check10:checked ~ .pie_chart {
+  background: conic-gradient(
+    darkolivegreen 0% 10%,
+    darkred 0% 100%
+  );
+}

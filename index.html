@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Pie Chart - HTML5 and CSS3</title>
+</head>
+<body>
+  <input type="checkbox" id="check">
+  <label for="check">Toggle 50%</label>
+  <input type="checkbox" id="check10">
+  <label for="check">Toggle 10%</label>
+  <div class="pie_chart">
+  </div>
+  <input type="range" name="myRange" min="0" max="100" value="0" id="slider" oninput="this.nextElementSibling.value = this.value + '%'" onchange="this.previousElementSibling.style.background = `conic-gradient(
+    darkolivegreen 0% ${this.value}%,
+    darkred 0% 100%
+  )`">
+  <output for="slider" name="myRange">0%</output>
+</body>
+</html>
