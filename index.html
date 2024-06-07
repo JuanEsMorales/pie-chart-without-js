@@ -7,10 +7,31 @@
   <title>Pie Chart - HTML5 and CSS3</title>
 </head>
 <body>
-  <input type="checkbox" id="check">
-  <label for="check">Toggle 50%</label>
-  <input type="checkbox" id="check10">
-  <label for="check">Toggle 10%</label>
+  <div class="labels">
+    <label for="check0">Ver 0%</label>
+    <label for="check10">Ver 10%</label>
+    <label for="check20">Ver 20%</label>
+    <label for="check30">Ver 30%</label>
+    <label for="check40">Ver 40%</label>
+    <label for="check50">Ver 50%</label>
+    <label for="check60">Ver 60%</label>
+    <label for="check70">Ver 70%</label>
+    <label for="check80">Ver 80%</label>
+    <label for="check90">Ver 90%</label>
+    <label for="check100">Ver 100%</label>
+  </div>
+  <input type="radio" name="percentage" id="check0">
+  <input type="radio" name="percentage" id="check10">
+  <input type="radio" name="percentage" id="check20">
+  <input type="radio" name="percentage" id="check30">
+  <input type="radio" name="percentage" id="check40">
+  <input type="radio" name="percentage" id="check50">
+  <input type="radio" name="percentage" id="check60">
+  <input type="radio" name="percentage" id="check70">
+  <input type="radio" name="percentage" id="check80">
+  <input type="radio" name="percentage" id="check90">
+  <input type="radio" name="percentage" id="check100">
+
   <div class="pie_chart">
   </div>
   <input type="range" name="myRange" min="0" max="100" value="0" id="slider" oninput="this.nextElementSibling.value = this.value + '%'" onchange="this.previousElementSibling.style.background = `conic-gradient(
