@@ -3,41 +3,35 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      height: 100vh;
+      width: 100vw;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  </style>
   <title>Pie Chart - HTML5 and CSS3</title>
 </head>
 <body>
-  <div class="labels">
-    <label for="check0">Ver 0%</label>
-    <label for="check10">Ver 10%</label>
-    <label for="check20">Ver 20%</label>
-    <label for="check30">Ver 30%</label>
-    <label for="check40">Ver 40%</label>
-    <label for="check50">Ver 50%</label>
-    <label for="check60">Ver 60%</label>
-    <label for="check70">Ver 70%</label>
-    <label for="check80">Ver 80%</label>
-    <label for="check90">Ver 90%</label>
-    <label for="check100">Ver 100%</label>
+  <div style="position: relative;">
+    <input type="submit" value="30%" style="color: darkolivegreen; background: transparent; outline: none; border: none; font-size: 25px; font-weight: bold; position: absolute; top: 0; left: 0;">
+    <div id="pie_chart" style="width: 450px;
+      height: 450px;
+      position: relative;
+      background: conic-gradient(
+      darkolivegreen 0% 30%,
+      darkred 0% 100%
+      );
+      border-radius: 100%;">
+    </div>
+    <input type="submit" value="70%" style="color: darkred; background: transparent; outline: none; border: none; font-size: 25px; font-weight: bold; position: absolute; top: 0; right: 0;">
   </div>
-  <input type="radio" name="percentage" id="check0">
-  <input type="radio" name="percentage" id="check10">
-  <input type="radio" name="percentage" id="check20">
-  <input type="radio" name="percentage" id="check30">
-  <input type="radio" name="percentage" id="check40">
-  <input type="radio" name="percentage" id="check50">
-  <input type="radio" name="percentage" id="check60">
-  <input type="radio" name="percentage" id="check70">
-  <input type="radio" name="percentage" id="check80">
-  <input type="radio" name="percentage" id="check90">
-  <input type="radio" name="percentage" id="check100">
-
-  <div class="pie_chart">
-  </div>
-  <input type="range" name="myRange" min="0" max="100" value="0" id="slider" oninput="this.nextElementSibling.value = this.value + '%'" onchange="this.previousElementSibling.style.background = `conic-gradient(
-    darkolivegreen 0% ${this.value}%,
-    darkred 0% 100%
-  )`">
-  <output for="slider" name="myRange">0%</output>
 </body>
 </html>
